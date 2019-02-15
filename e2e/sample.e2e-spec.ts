@@ -1,44 +1,27 @@
-import { AppiumDriver, createDriver, SearchOptions } from "nativescript-dev-appium";
-import { assert } from "chai";
+import { AppiumDriver, createDriver, UIElement } from "nativescript-dev-appium";
+import * as expect from "expect";
 
 describe("sample scenario", () => {
-    const defaultWaitTime = 5000;
-    let driver: AppiumDriver;
+  const defaultWaitTime = 5000;
+  let driver: AppiumDriver;
+  let navbar: UIElement;
 
-    before(async () => {
-        driver = await createDriver();
-    });
+  before(async () => {
+    driver = await createDriver();
+  });
 
-    after(async () => {
-        await driver.quit();
-        console.log("Quit driver!");
-    });
+  after(async () => {
+    await driver.quit();
+  });
 
-    afterEach(async function () {
-        if (this.currentTest.state === "failed") {
-            await driver.logTestArtifacts(this.currentTest.title);
-        }
-    });
+  afterEach(async function () {
+    if (this.currentTest.state === "failed") {
+      await driver.logTestArtifacts(this.currentTest.title);
+    }
+  });
 
-    it("should find an element by text", async () => {
-        const btnTap = await driver.findElementByAutomationText("TAP");
-        await btnTap.click();
-
-        const message = " taps left";
-        const lblMessage = await driver.findElementByText(message, SearchOptions.contains);
-        assert.equal(await lblMessage.text(), "41" + message);
-
-        // Image verification
-        // const screen = await driver.compareScreen("hello-world-41");
-        // assert.isTrue(screen);
-    });
-
-    it("should find an element by type", async () => {
-        const btnTap = await driver.findElementByClassName(driver.locators.button);
-        await btnTap.click();
-
-        const message = " taps left";
-        const lblMessage = await driver.findElementByText(message, SearchOptions.contains);
-        assert.equal(await lblMessage.text(), "40" + message);
-    });
+  it("has a navigation bar", async () => {
+    navbar = await driver.findElementByAutomationText("navigation");
+    expect(await navbar.exists()).toBe(true);
+  })
 });
