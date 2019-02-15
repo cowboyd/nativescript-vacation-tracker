@@ -32,3 +32,4 @@ typings/
 !.vscode/launch.json
 !.vscode/extensions.json
 /test-results.xml
+/e2e/reports
