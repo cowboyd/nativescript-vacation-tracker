@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><AppiumAUT><XCUIElementTypeApplication type="XCUIElementTypeApplication" name="vacationtracker" label="vacationtracker" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+    <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+      <XCUIElementTypeNavigationBar type="XCUIElementTypeNavigationBar" name="My App" enabled="true" visible="true" x="0" y="20" width="375" height="44">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="My App" label="My App" enabled="true" visible="true" x="157" y="32" width="61" height="21"/>
+      </XCUIElementTypeNavigationBar>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+          <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+            <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+              <XCUIElementTypeTable type="XCUIElementTypeTable" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="64" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Ter Stegen" name="Ter Stegen" label="Ter Stegen" enabled="true" visible="true" x="0" y="64" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="115" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="115" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Piqué" name="Piqué" label="Piqué" enabled="true" visible="true" x="0" y="115" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="166" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="167" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="I. Rakitic" name="I. Rakitic" label="I. Rakitic" enabled="true" visible="true" x="0" y="167" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="218" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="218" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Sergio" name="Sergio" label="Sergio" enabled="true" visible="true" x="0" y="218" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="269" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="270" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Denis Suárez" name="Denis Suárez" label="Denis Suárez" enabled="true" visible="true" x="0" y="270" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="321" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="321" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Arda" name="Arda" label="Arda" enabled="true" visible="true" x="0" y="321" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="372" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="373" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="A. Iniesta" name="A. Iniesta" label="A. Iniesta" enabled="true" visible="true" x="0" y="373" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="424" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="424" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Suárez" name="Suárez" label="Suárez" enabled="true" visible="true" x="0" y="424" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="475" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="476" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Messi" name="Messi" label="Messi" enabled="true" visible="true" x="0" y="476" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="527" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="527" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Neymar" name="Neymar" label="Neymar" enabled="true" visible="true" x="0" y="527" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="578" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="579" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Rafinha" name="Rafinha" label="Rafinha" enabled="true" visible="true" x="0" y="579" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="15" y="630" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="true" x="0" y="630" width="375" height="52">
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Cillessen" name="Cillessen" label="Cillessen" enabled="true" visible="true" x="0" y="630" width="375" height="52"/>
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="15" y="681" width="360" height="1"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="682" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Mascherano" name="Mascherano" label="Mascherano" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="733" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Paco Alcácer" name="Paco Alcácer" label="Paco Alcácer" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="785" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Jordi Alba" name="Jordi Alba" label="Jordi Alba" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="836" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Digne" name="Digne" label="Digne" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="888" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Sergi Roberto" name="Sergi Roberto" label="Sergi Roberto" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="939" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="André Gomes" name="André Gomes" label="André Gomes" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="991" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Aleix Vidal" name="Aleix Vidal" label="Aleix Vidal" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1042" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Umtiti" name="Umtiti" label="Umtiti" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1094" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Mathieu" name="Mathieu" label="Mathieu" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+                <XCUIElementTypeCell type="XCUIElementTypeCell" enabled="true" visible="false" x="0" y="1145" width="375" height="52">
+                  <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="64" width="360" height="1"/>
+                  <XCUIElementTypeStaticText type="XCUIElementTypeStaticText" value="Masip" name="Masip" label="Masip" enabled="true" visible="false" x="0" y="64" width="375" height="52"/>
+                </XCUIElementTypeCell>
+              </XCUIElementTypeTable>
+            </XCUIElementTypeOther>
+          </XCUIElementTypeOther>
+        </XCUIElementTypeOther>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeOther>
+  </XCUIElementTypeWindow>
+  <XCUIElementTypeWindow type="XCUIElementTypeWindow" enabled="true" visible="true" x="0" y="0" width="375" height="667">
+    <XCUIElementTypeStatusBar type="XCUIElementTypeStatusBar" enabled="true" visible="true" x="0" y="0" width="375" height="20">
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="false" x="0" y="0" width="375" height="20"/>
+      <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="0" y="0" width="375" height="20">
+        <XCUIElementTypeOther type="XCUIElementTypeOther" enabled="true" visible="true" x="6" y="0" width="39" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" value="SSID" name="3 of 3 Wi-Fi bars" label="3 of 3 Wi-Fi bars" enabled="true" visible="true" x="50" y="0" width="15" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="1:39 PM" label="1:39 PM" enabled="true" visible="true" x="165" y="0" width="48" height="20"/>
+        <XCUIElementTypeOther type="XCUIElementTypeOther" name="-100% battery power" label="-100% battery power" enabled="true" visible="true" x="335" y="0" width="35" height="20"/>
+      </XCUIElementTypeOther>
+    </XCUIElementTypeStatusBar>
+  </XCUIElementTypeWindow>
+</XCUIElementTypeApplication></AppiumAUT>
