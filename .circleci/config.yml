@@ -1,9 +1,9 @@
 version: 2
 
-yarn_install: &yarn_install
-
 jobs:
   ios:
+    macos:
+      xcode: "10.1.0"
     steps:
       - checkout
 
@@ -29,6 +29,8 @@ jobs:
 
 
   android:
+    docker:
+      - image: circleci/android:api-25-alpha
     steps:
       - checkout
 
