@@ -33,7 +33,7 @@ jobs:
     docker:
       - image: scratchy/nativescript-cli
     environment:
-      YARN: $HOME/.yarn/bin/yarn
+      YARN: /root/.yarn/bin/yarn
     steps:
       - checkout
 
