@@ -1,6 +1,7 @@
 version: 2
 
 jobs:
+
   ios:
     macos:
       xcode: "10.1.0"
@@ -33,6 +34,12 @@ jobs:
       - image: circleci/android:api-25-alpha
     steps:
       - checkout
+
+      ## install nvm, node, yarn
+      - run: curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
+      - run: nvm install 10
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash
+
 
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
