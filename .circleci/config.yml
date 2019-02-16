@@ -1,22 +1,22 @@
 version: 2
 
 yarn_install: &yarn_install
-  - restore_cache:
-      key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
 
-  - run: yarn
-
-  - save_cache:
-      key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
-      paths:
-        - ~/.cache/yarn
-        - node_modules
 jobs:
   ios:
     steps:
       - checkout
 
-      <<: *yarn_install
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+      - run: yarn
+
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+            - node_modules
 
       - run:
           name: "Pre-launch iOS Simulator"
@@ -32,7 +32,16 @@ jobs:
     steps:
       - checkout
 
-      <<: *yarn_install
+      - restore_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+
+      - run: yarn
+
+      - save_cache:
+          key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
+          paths:
+            - ~/.cache/yarn
+            - node_modules
 
       - run:
           name: "Build Android"
