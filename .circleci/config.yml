@@ -31,18 +31,14 @@ jobs:
 
   android:
     docker:
-      - image: circleci/android:api-25-alpha
+      - image: scratchy/nativescript-cli
+    environment:
+      YARN: $HOME/.yarn/bin/yarn
     steps:
       - checkout
 
       ## install nvm, node, yarn
-      - run:
-          command: |
-            curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.34.0/install.sh | bash
-            source ~/.nvm/nvm.sh
-            nvm install 10
-            curl -o- -L https://yarnpkg.com/install.sh | bash
-
+      - run: curl -o- -L https://yarnpkg.com/install.sh | bash
 
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
