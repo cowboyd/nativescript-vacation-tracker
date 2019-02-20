@@ -13,5 +13,4 @@ brew install ios-webkit-debug-proxy
 
 ## Running tests
 - `tns build ios`
-- `yarn e2e --runType sim.iPhone7 --appPath platforms
-/ios/build/Debug-iphonesimulator/nativescriptvacationtracker.app`
+- `find platforms -name *.app | xargs yarn e2e --runType sim.iPhone7 --appPath`
