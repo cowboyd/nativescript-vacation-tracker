@@ -24,6 +24,10 @@ jobs:
           command: xcrun instruments -w "iPhone 8 (11.2) [" || true
 
       - run:
+          name "Setup"
+          command: yarn tns setup
+
+      - run:
           name: "Build iOS"
           # Hack -> git log outputed as error
           command: yarn tns build ios
