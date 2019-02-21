@@ -13,6 +13,8 @@ jobs:
 
       - run: yarn
 
+      - run: yarn init:ios
+
       - save_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
           paths:
