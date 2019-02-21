@@ -26,7 +26,7 @@ jobs:
       - run:
           name: "Build iOS"
           # Hack -> git log outputed as error
-          command: NS_SKIP_ENV_CHECK=true yarn tns build ios
+          command: yes n | NS_SKIP_ENV_CHECK=true yarn tns build ios
 
 
   android:
