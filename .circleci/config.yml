@@ -25,7 +25,7 @@ jobs:
 
       - run:
           name: "Setup"
-          command: yarn tns prepare
+          command: yarn tns prepare ios
 
       - run:
           name: "Build iOS"
