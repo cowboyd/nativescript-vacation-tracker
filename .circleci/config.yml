@@ -24,7 +24,7 @@ jobs:
           command: xcrun instruments -w "iPhone 8 (11.2) [" || true
 
       - run:
-          name "Setup"
+          name: "Setup"
           command: yarn tns setup
 
       - run:
