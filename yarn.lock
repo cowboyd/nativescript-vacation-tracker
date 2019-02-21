@@ -4614,11 +4614,6 @@ io.appium.settings@^2.10.0:
   resolved "https://registry.yarnpkg.com/io.appium.settings/-/io.appium.settings-2.14.0.tgz#648d7f324154378335a3f25365e3c846327b8493"
   integrity sha512-TyKpcT20GS+meymYFiW9p5uITbycaWED7arkr/dpfgC9dAYAGz7+gpbMmFq2MrEwUxTGUMbhYjarwHZiFke3+A==
 
-ios-deploy@^1.9.4:
-  version "1.9.4"
-  resolved "https://registry.yarnpkg.com/ios-deploy/-/ios-deploy-1.9.4.tgz#5aa6b198feabcf53f912639fc2d9e11b4923079d"
-  integrity sha512-pgyc19zgtwGrfx3GL8yV0c0dAPucTpJ0VZkuS3DcqxIZYC48+UW+tBTxI43u1ZDk17mop0ABLs1SkAy5SUQ6pQ==
-
 ios-device-lib@0.5.1, ios-device-lib@~0.5.1:
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/ios-device-lib/-/ios-device-lib-0.5.1.tgz#14588ae71690860615ff93cad602050dd3c8247a"
