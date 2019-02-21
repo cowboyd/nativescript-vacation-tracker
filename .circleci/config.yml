@@ -55,7 +55,7 @@ jobs:
 
       - run:
           name: "Build Android"
-          command: yarn tns build android
+          command: $YARN tns build android
 
 workflows:
   version: 2
