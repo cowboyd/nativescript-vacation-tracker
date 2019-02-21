@@ -11,6 +11,7 @@ brew install ideviceinstaller
 brew install ios-webkit-debug-proxy
 ```
 
-## Running tests
+## Running tests for iOS
+- `yarn global add ios-deploy`
 - `tns build ios`
 - `find platforms -name *.app | xargs yarn e2e --runType sim.iPhone7 --appPath`
