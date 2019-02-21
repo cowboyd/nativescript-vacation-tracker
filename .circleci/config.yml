@@ -11,8 +11,6 @@ jobs:
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
 
-      - run: yarn global add ios-deploy
-
       - run: yarn
 
       - save_cache:
