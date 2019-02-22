@@ -10,6 +10,11 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: "Pre-launch iOS Simulator"
+          command: xcrun instruments -w "iPhone 7 (11.2) [" || true
+          background: true
+
       - restore_cache:
           name: "Restore Homebrew cache"
           key: homebrew-{{ .Branch }}-2019-02-22.2
@@ -50,12 +55,6 @@ jobs:
       - run:
           name: "Install Python `six` package"
           command: pip install six
-
-
-      # - run:
-      #     name: "Pre-launch iOS Simulator"
-      #     command: xcrun instruments -w "iPhone 8 (11.2) [" || true
-
 
       - run:
           name: "Build iOS"
