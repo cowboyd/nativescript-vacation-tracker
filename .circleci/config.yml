@@ -13,14 +13,10 @@ jobs:
           key: homebrew-{{ .Branch }}-2019-02-22.2
 
       - run:
-          name: "Update Homebrew"
-          command: brew update
-
-      - run:
-          name: "Install operating system level build dependencies"
-          environment:
-            HOMEBREW_NO_AUTO_UPDATE: "1"
-          command: brew bundle
+          name: "Install operating system level build dependencies with homebrew"
+          command: |
+            brew update
+            brew bundle
 
       - save_cache:
           name: "Save Homebrew cache"
@@ -30,7 +26,6 @@ jobs:
             - /usr/local/Cellar
             - ~/Library/caches/Homebrew
 
-
       - run:
           name: "Set Global NativeScript Settings"
           command: |
@@ -38,11 +33,13 @@ jobs:
             cp user-settings.json ~/.local/share/.nativescript-cli
 
       - restore_cache:
+          name: "Restore Yarn cache"
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
 
       - run: yarn
 
       - save_cache:
+          name: "Save Yarn cache"
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
           paths:
             - ~/.cache/yarn
