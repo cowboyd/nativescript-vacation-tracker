@@ -10,7 +10,7 @@ jobs:
 
       - restore_cache:
           name: "Restore Homebrew cache"
-          key: homebrew-{{ .Branch }}-2019-02-22.1
+          key: homebrew-{{ .Branch }}-2019-02-22.2
 
       - run:
           name: "Update Homebrew"
@@ -20,16 +20,11 @@ jobs:
           name: "Install operating system level build dependencies"
           environment:
             HOMEBREW_NO_AUTO_UPDATE: "1"
-          command: |
-            brew upgrade carthage
-            brew install usbmuxd --HEAD
-            brew install libimobiledevice --HEAD
-            brew install ideviceinstaller
-            brew install ios-webkit-debug-proxy
+          command: brew bundle
 
       - save_cache:
           name: "Save Homebrew cache"
-          key: homebrew-{{ .Branch }}-2019-02-22.1
+          key: homebrew-{{ .Branch }}-2019-02-22.2
           paths:
             - /usr/local/Homebrew
             - /usr/local/Cellar
