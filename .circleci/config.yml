@@ -26,7 +26,7 @@ jobs:
             - node_modules
 
       - run:
-          name: "Install pip"
+          name: "Install Python `six` package"
           command: pip install six
 
       # - run:
@@ -37,7 +37,7 @@ jobs:
       - run:
           name: "Build iOS"
           # Hack -> git log outputed as error
-          command: yarn tns build ios
+          command: NS_SKIP_ENV_CHECK=true yarn tns build ios
 
 
   android:
