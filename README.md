@@ -5,7 +5,7 @@
 - To run/build app locally, not just on device, [Full setup for NativeScript CLI](https://docs.nativescript.org/angular/start/quick-setup#full-setup)
 - Install [external dependencies of XCUITest driver for iOS](https://github.com/NativeScript/nativescript-dev-appium#setup):
 ```
-brew install carthage@0.32.0
+brew install carthage
 brew install libimobiledevice --HEAD
 brew install ideviceinstaller
 brew install ios-webkit-debug-proxy

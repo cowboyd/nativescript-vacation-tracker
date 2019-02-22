@@ -32,7 +32,10 @@ jobs:
       - run:
           name: "Install XCUnitTest dependencies"
           command: |
-            brew install carthage@0.32.0
+            brew install carthage
+            brew install libimobiledevice --HEAD
+            brew install ideviceinstaller
+            brew install ios-webkit-debug-proxy
 
       # - run:
       #     name: "Pre-launch iOS Simulator"
