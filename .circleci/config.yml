@@ -20,13 +20,12 @@ jobs:
             - node_modules
 
       - run:
-          name: "Pre-launch iOS Simulator"
-          command: xcrun instruments -w "iPhone 8 (11.2) [" || true
+          name: "disable Usage and Error reporting"
+          command: yarn tns usage-reporting disable && yarn tns error-reporting disable
 
       - run:
-          name: "Build iOS"
-          # Hack -> git log outputed as error
-          command: yes n | NS_SKIP_ENV_CHECK=true yarn tns build ios
+          name: "Run NativeScript Doctor"
+          command: yarn tns doctor
 
 
   android:
