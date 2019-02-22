@@ -9,21 +9,15 @@ jobs:
       - checkout
 
       - restore_cache:
-          key: homebrew-2019-02-22.1
+          name: "Homebrew"
+          key: homebrew-{{ .Branch }}-2019-02-22.1
 
       - run:
           name: "Update Homebrew"
           command: brew update
 
-      - save_cache:
-          key: homebrew-2019-02-22.1
-          paths:
-            - /usr/local/Homebrew
-            - /usr/local/Cellar
-            - ~/Library/caches/Homebrew
-
       - run:
-          name: "Install XCUnitTest dependencies"
+          name: "Install operating system level build dependencies"
           environment:
             HOMEBREW_NO_AUTO_UPDATE: "1"
           command: |
@@ -32,6 +26,14 @@ jobs:
             brew install libimobiledevice --HEAD
             brew install ideviceinstaller
             brew install ios-webkit-debug-proxy
+
+      - save_cache:
+          key: homebrew-{{ .Branch }}-2019-02-22.1
+          paths:
+            - /usr/local/Homebrew
+            - /usr/local/Cellar
+            - ~/Library/caches/Homebrew
+
 
       - run:
           name: "Set Global NativeScript Settings"
