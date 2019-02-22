@@ -20,8 +20,16 @@ jobs:
             - node_modules
 
       - run:
-          name: "Pre-launch iOS Simulator"
-          command: xcrun instruments -w "iPhone 8 (11.2) [" || true
+          name: "Install pip"
+          command: pip install six
+
+      # - run:
+      #     name: "Pre-launch iOS Simulator"
+      #     command: xcrun instruments -w "iPhone 8 (11.2) [" || true
+
+      - run:
+          name: "Disable Reporting"
+          command: yarn tns usage-reporting disable && yarn tns error-reporting disable
 
       - run:
           name: "Build iOS"
