@@ -48,6 +48,7 @@ jobs:
           environment:
             HOMEBREW_NO_AUTO_UPDATE: "1"
           command: |
+            brew upgrade libusbmuxd
             brew upgrade carthage
             brew install libimobiledevice --HEAD
             brew install ideviceinstaller
