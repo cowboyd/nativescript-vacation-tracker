@@ -5,8 +5,8 @@ jobs:
   ios:
     macos:
       xcode: "10.1.0"
-      environment:
-        NS_SKIP_ENV_CHECK: "true"
+    environment:
+      NS_SKIP_ENV_CHECK: "true"
     steps:
       - checkout
 
