@@ -48,7 +48,6 @@
   "gitHead": "9b6565a4513375a33a59c44262dfc1d818a8205e",
   "readme": "NativeScript Application",
   "scripts": {
-    "init:ios": "yarn add -D ios-deploy@^1.9.4 --pure-lockfile && git checkout -f package.json",
     "build": "tns build",
     "e2e": "node ./node_modules/nativescript-dev-appium/check-dev-deps.js &&  tsc -p e2e  &&  mocha --opts ./e2e/config/mocha.opts ",
     "e2e-watch": "tsc -p e2e --watch"
