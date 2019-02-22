@@ -10,11 +10,16 @@ jobs:
 
       # - restore_cache:
       #     key: brew-v1
-      # - run: brew update
+      - run:
+          name: "Update Homebrew"
+          command: brew update
       # - save_cache:
       #     key: brew-v1
       #     paths:
       #       - /usr/local/Homebrew
+      #       - /usr/local/Cellar
+      #       - ~/Library/caches/Homebrew
+
 
       - run:
           name: "Set Global NativeScript Settings"
