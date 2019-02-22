@@ -9,7 +9,7 @@ jobs:
       - checkout
 
       - restore_cache:
-          name: "Homebrew"
+          name: "Restore Homebrew cache"
           key: homebrew-{{ .Branch }}-2019-02-22.1
 
       - run:
@@ -28,6 +28,7 @@ jobs:
             brew install ios-webkit-debug-proxy
 
       - save_cache:
+          name: "Save Homebrew cache"
           key: homebrew-{{ .Branch }}-2019-02-22.1
           paths:
             - /usr/local/Homebrew
