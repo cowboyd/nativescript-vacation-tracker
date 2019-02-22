@@ -10,7 +10,9 @@ jobs:
 
       - run:
           name: "Set Global NativeScript Settings"
-          command: cp user-settings.json ~/.local/share/.nativescript-cli
+          command:
+            - mkdir -p ~/.local/share/.nativescript-cli
+            - cp user-settings.json ~/.local/share/.nativescript-cli
 
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
