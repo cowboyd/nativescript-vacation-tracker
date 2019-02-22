@@ -8,18 +8,19 @@ jobs:
     steps:
       - checkout
 
-      # - restore_cache:
-      #     key: brew-v1
+      - restore_cache:
+          key: homebrew-2019-02-22.1
+
       - run:
           name: "Update Homebrew"
           command: brew update
-      # - save_cache:
-      #     key: brew-v1
-      #     paths:
-      #       - /usr/local/Homebrew
-      #       - /usr/local/Cellar
-      #       - ~/Library/caches/Homebrew
 
+      - save_cache:
+          key: homebrew-2019-02-22.1
+          paths:
+            - /usr/local/Homebrew
+            - /usr/local/Cellar
+            - ~/Library/caches/Homebrew
 
       - run:
           name: "Set Global NativeScript Settings"
@@ -47,7 +48,7 @@ jobs:
           environment:
             HOMEBREW_NO_AUTO_UPDATE: "1"
           command: |
-            brew install carthage
+            brew upgrade carthage
             brew install libimobiledevice --HEAD
             brew install ideviceinstaller
             brew install ios-webkit-debug-proxy
