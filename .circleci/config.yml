@@ -5,6 +5,8 @@ jobs:
   ios:
     macos:
       xcode: "10.1.0"
+      environment:
+        NS_SKIP_ENV_CHECK: "true"
     steps:
       - checkout
 
@@ -27,7 +29,7 @@ jobs:
             - ~/Library/caches/Homebrew
 
       - run:
-          name: "Set Global NativeScript Settings"
+          name: "Install global NativeScript settings"
           command: |
             mkdir -p ~/.local/share/.nativescript-cli
             cp user-settings.json ~/.local/share/.nativescript-cli
@@ -58,7 +60,11 @@ jobs:
       - run:
           name: "Build iOS"
           # Hack -> git log outputed as error
-          command: NS_SKIP_ENV_CHECK=true yarn tns build ios
+          command: yarn tns build ios
+
+      - run:
+          name: "Tests"
+          command: find platforms -name *.app | xargs yarn e2e --runType sim.iPhone7 --appPath
 
 
   android:
