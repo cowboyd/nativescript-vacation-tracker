@@ -34,7 +34,7 @@ jobs:
       - image: scratchy/nativescript-cli
     environment:
       YARN: /root/.yarn/bin/yarn
-      _JAVA_OPTIONS: -Xmx512m
+      _JAVA_OPTIONS: -Xmx1g
     steps:
       - checkout
 
