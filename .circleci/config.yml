@@ -29,6 +29,11 @@ jobs:
           name: "Install Python `six` package"
           command: pip install six
 
+      - run:
+          name: "Install XCUnitTest dependencies"
+          command: |
+            brew install carthage@0.32.0
+
       # - run:
       #     name: "Pre-launch iOS Simulator"
       #     command: xcrun instruments -w "iPhone 8 (11.2) [" || true
