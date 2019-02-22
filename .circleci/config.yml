@@ -8,6 +8,10 @@ jobs:
     steps:
       - checkout
 
+      - run:
+          name: "Set Global NativeScript Settings"
+          command: cp user-settings.json ~/.local/share/.nativescript-cli
+
       - restore_cache:
           key: yarn-v1-{{ checksum "yarn.lock" }}-{{ arch }}
 
@@ -27,14 +31,11 @@ jobs:
       #     name: "Pre-launch iOS Simulator"
       #     command: xcrun instruments -w "iPhone 8 (11.2) [" || true
 
-      - run:
-          name: "Disable Reporting"
-          command: yarn tns usage-reporting disable && yarn tns error-reporting disable
 
       - run:
           name: "Build iOS"
           # Hack -> git log outputed as error
-          command: yes n | NS_SKIP_ENV_CHECK=true yarn tns build ios
+          command: yarn tns build ios
 
 
   android:
