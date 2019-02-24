@@ -63,7 +63,7 @@ jobs:
 
       - run:
           name: "Tests"
-          command: find platforms -name *.app | xargs yarn e2e --runType sim.iPhone7 --appPath
+          command: find platforms -name *.app | xargs yarn e2e -v --runType sim.iPhone7 --appPath
 
 
   android:
