@@ -1,6 +1,6 @@
 # -*- mode: ruby -*-
 brew "carthage"
-brew "usbmuxd", args: ["HEAD"]
-brew "libimobiledevice", args: ["HEAD"]
-brew "ideviceinstaller"
-brew "ios-webkit-debug-proxy"
+brew "usbmuxd", link: true, args: ["HEAD"]
+brew "libimobiledevice", link: true, args: ["HEAD"]
+brew "ideviceinstaller", link: true
+brew "ios-webkit-debug-proxy", link: true
