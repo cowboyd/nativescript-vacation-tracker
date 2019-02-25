@@ -17,18 +17,19 @@ jobs:
 
       - restore_cache:
           name: "Restore Homebrew cache"
-          key: homebrew-{{ .Branch }}-2019-02-22.2
+          key: homebrew-{{ .Branch }}-2019-02-22.3
 
       - run:
           name: "Install operating system level build dependencies with homebrew"
           command: |
+            brew uninstall carthage
             brew update
             brew bundle
             brew link libplist
 
       - save_cache:
           name: "Save Homebrew cache"
-          key: homebrew-{{ .Branch }}-2019-02-22.2
+          key: homebrew-{{ .Branch }}-2019-02-22.3
           paths:
             - /usr/local/Homebrew
             - /usr/local/Cellar
