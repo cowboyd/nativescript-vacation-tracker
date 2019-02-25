@@ -99,4 +99,4 @@ workflows:
   build:
     jobs:
       - ios
-      - android
+      # - android
