@@ -25,7 +25,6 @@ jobs:
             brew uninstall carthage
             brew update
             brew bundle
-            brew link libplist
 
       - save_cache:
           name: "Save Homebrew cache"
@@ -65,7 +64,7 @@ jobs:
 
       - run:
           name: "Tests"
-          command: find platforms -name *.app | xargs yarn e2e -v --runType sim.iPhone7 --appPath
+          command: yarn e2e -v --runType sim.iPhone7 --appPath --ignoreDeviceController=false
 
 
   android:
