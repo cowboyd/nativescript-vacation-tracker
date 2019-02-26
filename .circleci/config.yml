@@ -64,7 +64,7 @@ jobs:
 
       - run:
           name: "Tests"
-          command: yarn e2e -v --runType sim.iPhone7 --appPath --ignoreDeviceController=false
+          command: find platforms -name *.app | xargs yarn e2e -v --runType sim.iPhone7 --appPath
 
 
   android:

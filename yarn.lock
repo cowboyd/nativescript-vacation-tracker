@@ -1079,10 +1079,40 @@ appium-android-driver@^4.0.0, appium-android-driver@^4.8.0:
     ws "^6.0.0"
     yargs "^12.0.1"
 
-appium-base-driver@^3.0.0, appium-base-driver@^3.10.0, appium-base-driver@^3.13.2, appium-base-driver@^3.5.0, appium-base-driver@^3.x:
+appium-base-driver@^3.0.0, appium-base-driver@^3.10.0, appium-base-driver@^3.5.0, appium-base-driver@^3.x:
   version "3.15.2"
   resolved "https://registry.yarnpkg.com/appium-base-driver/-/appium-base-driver-3.15.2.tgz#8565ecb08dd395267db4f87ce4a3fb3176b2096c"
   integrity sha512-gqJJAnyX4hnD04JEEphoTAR59Vx5K2ncCt1nunl4YklFUa+y2NwbNUxV0W1Mzi2fEvJcmMb1NNRYUjCqQbzPzQ==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    appium-support "^2.24.0"
+    async-lock "^1.0.0"
+    asyncbox "^2.3.1"
+    bluebird "^2.10.2"
+    body-parser "^1.18.2"
+    colors "^1.1.2"
+    es6-error "^4.1.1"
+    express "^4.16.2"
+    http-status-codes "^1.3.0"
+    jimp "^0.6.0"
+    lodash "^4.0.0"
+    lru-cache "^5.0.0"
+    method-override "^3.0.0"
+    morgan "^1.9.0"
+    request "^2.83.0"
+    request-promise "^4.2.2"
+    sanitize-filename "^1.6.1"
+    serve-favicon "^2.4.5"
+    source-map-support "^0.5.5"
+    teen_process "^1.11.0"
+    uuid-js "^0.7.5"
+    validate.js "^0.12.0"
+    ws "^6.0.0"
+
+appium-base-driver@^3.15.2:
+  version "3.15.3"
+  resolved "https://registry.yarnpkg.com/appium-base-driver/-/appium-base-driver-3.15.3.tgz#23a04f2d3cfd9eaf20968c89087dc2a7c110a73e"
+  integrity sha512-ERH5wsvZKAFw1W+C4DlgYuAn86ED2qrpfNlJOlzGjDVHlvD/43QAsp2Epw9qQXLHJmtYUUlAT45k4QgRHmvwqw==
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-support "^2.24.0"
@@ -1362,7 +1392,7 @@ appium-tizen-driver@^1.1.1-beta.3:
     teen_process "^1.9.0"
     yargs "^12.0.2"
 
-appium-uiautomator2-driver@^1.27.0:
+appium-uiautomator2-driver@^1.29.1:
   version "1.29.1"
   resolved "https://registry.yarnpkg.com/appium-uiautomator2-driver/-/appium-uiautomator2-driver-1.29.1.tgz#b8d6ae07aad5c5bbb7918eb73c6c4ddf537b4216"
   integrity sha512-a5TkV5aGfMSdavF+kCc9tiORzTiFwe9kCMOXldWlsi/r86F/rYHLaObBVs7eTWJUMsOFBPdUo/rX/iakVnc9jQ==
@@ -1445,7 +1475,7 @@ appium-xcuitest-driver@2.x, appium-xcuitest-driver@^2.105.1:
     xmldom "^0.1.27"
     yargs "^12.0.1"
 
-appium-youiengine-driver@^1.1.1:
+appium-youiengine-driver@^1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/appium-youiengine-driver/-/appium-youiengine-driver-1.1.2.tgz#3afdc14a76f457b1b5852225288c6102b132afa6"
   integrity sha512-EqZTDs8BR+CANlrPWKDvui3pLCP/MkeuqulRGJK34WQQpfnkKI/XNpvpF6n6aGjrTnDrFDS/7CWFQ1KtW7bD9g==
@@ -1465,14 +1495,14 @@ appium-youiengine-driver@^1.1.1:
     shelljs "0.8.x"
     source-map-support "^0.5.9"
 
-appium@^1.11.0:
-  version "1.11.0"
-  resolved "https://registry.yarnpkg.com/appium/-/appium-1.11.0.tgz#171bbaa6b918c0a20c7deae6b001a429f05a4e84"
-  integrity sha512-xqzTCMYGZd2bvuguGv3w+bPJwCmUpflXYXV1MPg+K6Q84AjjWe+14t6aluBIFhOsseH3Xz0hSYSiOlSoLFOmQQ==
+appium@^1.11.1:
+  version "1.11.1"
+  resolved "https://registry.yarnpkg.com/appium/-/appium-1.11.1.tgz#133bbff2bf42b0496e77aa7ef8f79634d4403a5a"
+  integrity sha512-v1Iny7ED4/2drvZB/ShZia//iUL0LkbQ8AnZKm3gH33AoCqBjgEsaHmisAKSgUarqpNtg3iS4U9Dkc9CFntX6A==
   dependencies:
     "@babel/runtime" "^7.0.0"
     appium-android-driver "^4.8.0"
-    appium-base-driver "^3.13.2"
+    appium-base-driver "^3.15.2"
     appium-espresso-driver "^1.7.1"
     appium-fake-driver "^0.6.2"
     appium-ios-driver "^2.13.2"
@@ -1480,10 +1510,10 @@ appium@^1.11.0:
     appium-selendroid-driver "^1.13.3"
     appium-support "^2.25.0"
     appium-tizen-driver "^1.1.1-beta.3"
-    appium-uiautomator2-driver "^1.27.0"
+    appium-uiautomator2-driver "^1.29.1"
     appium-windows-driver "^1.5.1"
     appium-xcuitest-driver "^2.105.1"
-    appium-youiengine-driver "^1.1.1"
+    appium-youiengine-driver "^1.1.2"
     argparse "^1.0.10"
     async-lock "^1.0.0"
     asyncbox "^2.5.2"
