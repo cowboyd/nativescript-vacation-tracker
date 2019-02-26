@@ -25,6 +25,7 @@ jobs:
             brew uninstall carthage
             brew update
             brew bundle
+            brew link libplist
 
       - save_cache:
           name: "Save Homebrew cache"
